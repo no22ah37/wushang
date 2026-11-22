@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="五上学习">
+<meta name="theme-color" content="#f6f4ef">
+<title>五年级上册 · 学习中心</title>
+<style>
+:root{--ink:#1f2328;--sub:#5b6470;--line:#e3e6ea;--bg:#f6f4ef;--card:#fff;
+  --red:#9e2b25;--red2:#c0392b;--green:#1a7f4b;--blue:#1f4e79;--amber:#8a5a12}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);line-height:1.7;font-size:16px;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  padding-bottom:env(safe-area-inset-bottom)}
+.wrap{max-width:760px;margin:0 auto;padding:28px 18px 40px}
+.hd{text-align:center;margin:10px 0 26px}
+.hd .tag{display:inline-block;font-size:12px;color:var(--sub);border:1px solid var(--line);
+  border-radius:999px;padding:2px 10px;background:#fff}
+.hd h1{font-size:26px;margin:12px 0 4px;letter-spacing:1px}
+.hd p{margin:0;font-size:13.5px;color:var(--sub)}
+
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 18px 16px;
+  text-decoration:none;color:inherit;display:block;transition:.18s;position:relative;overflow:hidden}
+.card:active{transform:scale(.99)}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px}
+.card.cn::before{background:var(--red)}
+.card.en::before{background:var(--blue)}
+.card h2{margin:0 0 2px;font-size:20px;display:flex;align-items:center;gap:8px}
+.card .sub{font-size:13px;color:var(--sub);margin:0 0 12px}
+.meta{display:flex;gap:16px;margin:0 0 14px}
+.meta div{font-size:12px;color:var(--sub)}
+.meta b{display:block;font-size:19px;color:var(--ink);line-height:1.3}
+.go{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;
+  border-radius:999px;padding:7px 16px;color:#fff}
+.card.cn .go{background:var(--red)}
+.card.en .go{background:var(--blue)}
+
+h3.sec{font-size:14px;color:var(--sub);font-weight:700;margin:30px 0 10px;letter-spacing:.5px}
+.docs{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.doc{display:flex;align-items:center;gap:10px;padding:13px 16px;text-decoration:none;color:inherit;
+  border-bottom:1px solid var(--line)}
+.doc:last-child{border-bottom:0}
+.doc:active{background:#faf9f6}
+.doc .ic{width:30px;height:30px;border-radius:8px;background:#f1eee8;display:grid;place-items:center;
+  font-size:13px;font-weight:800;color:var(--red);flex:none}
+.doc .tx{flex:1}
+.doc .tx b{display:block;font-size:14.5px;font-weight:600}
+.doc .tx span{font-size:12px;color:var(--sub)}
+.doc .ar{color:#c3c7cd;font-size:18px}
+footer{max-width:760px;margin:0 auto;padding:0 18px 30px;font-size:12px;color:var(--sub);text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hd">
+    <span class="tag">人教PEP · 统编版 · 2026 秋新版</span>
+    <h1>五年级上册 · 学习中心</h1>
+    <p>语文 8 个单元 25 课 · 英语 6 个单元 · 共 363 道题</p>
+  </div>
+
+  <div class="grid">
+    <a class="card cn" href="yuwen.html">
+      <h2>📖 语文</h2>
+      <p class="sub">统编版（部编版）五年级上册</p>
+      <div class="meta">
+        <div><b>195</b>题目</div>
+        <div><b>8</b>单元</div>
+        <div><b>6</b>篇课内阅读</div>
+      </div>
+      <span class="go">开始练习 →</span>
+    </a>
+
+    <a class="card en" href="english.html">
+      <h2>🔤 英语</h2>
+      <p class="sub">人教 PEP（三年级起点）五年级上册</p>
+      <div class="meta">
+        <div><b>168</b>题目</div>
+        <div><b>6</b>单元</div>
+        <div><b>5</b>篇阅读</div>
+      </div>
+      <span class="go">开始练习 →</span>
+    </a>
+  </div>
+
+  <h3 class="sec">复习资料（PDF，可在 iPad 上批注）</h3>
+  <div class="docs">
+    <a class="doc" href="files/yuwen-notes.pdf">
+      <span class="ic">语</span>
+      <span class="tx"><b>语文 · 知识点与复习提纲</b><span>字词、25 篇课文要点、古诗文、阅读方法</span></span>
+      <span class="ar">›</span>
+    </a>
+    <a class="doc" href="files/yuwen-fanwen.pdf">
+      <span class="ic">范</span>
+      <span class="tx"><b>语文 · 习作范文集</b><span>8 次习作、19 篇范文，附思路与点评</span></span>
+      <span class="ar">›</span>
+    </a>
+    <a class="doc" href="files/yuwen-tiku.pdf">
+      <span class="ic">题</span>
+      <span class="tx"><b>语文 · 同步题库（含答案）</b><span>195 题，可打印</span></span>
+      <span class="ar">›</span>
+    </a>
+    <a class="doc" href="files/en-notes.pdf">
+      <span class="ic">英</span>
+      <span class="tx"><b>英语 · 知识点与复习提纲</b><span>语音、单词、短语、句型、语法、写作</span></span>
+      <span class="ar">›</span>
+    </a>
+    <a class="doc" href="files/en-tiku.pdf">
+      <span class="ic">题</span>
+      <span class="tx"><b>英语 · 题库（含答案）</b><span>168 题，可打印</span></span>
+      <span class="ar">›</span>
+    </a>
+  </div>
+
+  <footer>答题记录保存在本机浏览器，换设备不同步。<br>建议用 Safari 打开后「添加到主屏幕」。</footer>
+</div>
+</body>
+</html>
